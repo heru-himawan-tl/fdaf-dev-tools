@@ -33,8 +33,8 @@ as necessary to meet your new application design preferences and specification.
 More, do some stuff with your custom application codes.
 
 3. Change the general application configuration in `application.conf` into
-your FDAF application code name, i.e APP_CODE_NAME="foo", and your favorite port,
-i.e PORT="with-hibernate".
+your FDAF application code name, i.e `APP_CODE_NAME="foo"`, and your favorite port,
+i.e `PORT="with-hibernate"`.
 
 4. Call `./compile-test.sh`.
   
@@ -56,8 +56,8 @@ as necessary to meet your new application design preferences and specification.
 More, do some stuff with your custom application codes.
 
 4. Change the general application configuration in `application.conf` into
-your FDAF application code name, i.e APP_CODE_NAME="foo", and your favorite port,
-i.e PORT="with-hibernate".
+your FDAF application code name, i.e `APP_CODE_NAME="foo"`, and your favorite port,
+i.e `PORT="with-hibernate"`.
 
 5. Call `./compile-test.sh`.
 

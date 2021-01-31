@@ -10,6 +10,16 @@ application.
 
 ## Common Usage
 
+### Determining The PORT
+
+FDAF can be ported into three optionanl PORT(s):
+
+  - `with-hibernate` - to compile FDAF application with Hibernate JPA provider supports
+  - `with-eclipselink` - to compile FDAF application with EclipseLink JPA provider supports
+  - `thorntail` - to compile FDAF application into Thorntail application
+
+PORT can be set within `application.conf`.
+
 ### With Fresh FDAF Framework
 
 To create application from a fresh FDAF framework, follow the following steps:
@@ -23,13 +33,10 @@ as necessary to meet your new application design preferences and specification.
 More, do some stuff with your custom application codes.
 
 3. Change the general application configuration in `application.conf` into
-your FDAF application name, i.e "foo".
+your FDAF application code name, i.e APP_CODE_NAME="foo", and your favorite port,
+i.e PORT="with-hibernate".
 
-4. Call `./compile-test.sh` script from terminal console with one of the following
-main options:
-  - `with-hibernate` - to compile FDAF application with Hibernate JPA provider supports
-  - `with-eclipselink` - to compile FDAF application with EclipseLink JPA provider supports
-  - `thorntail` - to compile FDAF application into Thorntail application
+4. Call `./compile-test.sh`.
   
 ### With Split or Modified FDAF Framework
 
@@ -49,13 +56,10 @@ as necessary to meet your new application design preferences and specification.
 More, do some stuff with your custom application codes.
 
 4. Change the general application configuration in `application.conf` into
-your FDAF application name, i.e "foo".
+your FDAF application code name, i.e APP_CODE_NAME="foo", and your favorite port,
+i.e PORT="with-hibernate".
 
-5. Call `./compile-test.sh` from terminal console with one of the following
-main options:
-  - `with-hibernate` - to compile FDAF application with Hibernate JPA provider supports
-  - `with-eclipselink` - to compile FDAF application with EclipseLink JPA provider supports
-  - `thorntail` - to compile FDAF application into Thorntail application
+5. Call `./compile-test.sh`.
 
 ## Specific Usage
 
@@ -78,13 +82,13 @@ purpose, by producing non-archived web-application and business-tier
 application inside directory of `deployment/$APP_CODE_NAME-$PORT/`.
 
 As of a _testing-application_ compiled, call `./update.sh` from a terminal
-console under current project directory with one of options:
+console under current project directory with one of PORT options:
 
   - `with-hibernate` - to realtime update view layer for FDAF application with Hibernate JPA provider supports
   - `with-eclipselink` - to realtime update view layer for FDAF application with EclipseLink JPA provider supports
   
 Note:  
-This is not applicable for FDAF compiled as a Thorntail Application.
+This is not applicable for FDAF compiled with PORT=thorntail or as a Thorntail Application.
 
 ## License
 

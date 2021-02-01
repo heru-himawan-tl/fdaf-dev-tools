@@ -12,7 +12,7 @@ application.
 
 ### Determining The PORT
 
-FDAF can be ported into three optional PORT(s):
+FDAF can be applied with one of the following three PORT(s):
 
   - `with-hibernate` - to compile FDAF application with Hibernate JPA provider supports
   - `with-eclipselink` - to compile FDAF application with EclipseLink JPA provider supports

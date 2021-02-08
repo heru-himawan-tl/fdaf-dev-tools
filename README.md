@@ -1,24 +1,21 @@
 FDAF Development Tools
 ======================
 
-This is a collection of FDAF development tools. It is designed to support
-implementation of FDAF into testing-application or ready-to-deploy
-application. It also designed to split current FDAF framework from current
-development-source of application, to let the reuse of last modified FDAF
-framework based current application project for creating another FDAF
-application.
+A collection of FDAF development tools, designed to support FDAF implementation
+for compiling a testing-application or a ready-to-deploy application, to split
+current FDAF framework from current development-source of application, and for
+realtime testing the FDAF application view layer design.
 
-## Common Usage
+## Determining The PORT
 
-### Determining The PORT
-
-FDAF can be applied with one of the following three PORT(s):
+Before using FDAF development tools, you must decide which PORT will be applied.
+PORT can be set within `application.conf` as one of the following three PORT(s):
 
   - `with-hibernate` - to compile FDAF application with Hibernate JPA provider supports
   - `with-eclipselink` - to compile FDAF application with EclipseLink JPA provider supports
   - `thorntail` - to compile FDAF application into Thorntail application
 
-PORT can be set within `application.conf`.
+## Common Usage
 
 ### With Fresh FDAF Framework
 

@@ -2,26 +2,26 @@
 
 reset
 
+APP_CODE_NAME=
 PORT=
 
 . ./application.conf
 
 CWD=$(pwd)
-BASE=$(basename $CWD)
 cd development-source/io.sourceforge.fdaf/fdaf
 
 if mvn clean compile -P initialize-compilable; then
     cd $CWD
-    cd compilable-source/"$BASE-$PORT"
+    cd compilable-source/"$APP_CODE_NAME-$PORT"
     if mvn; then
         if [ "$PORT" != "thorntail" ]; then
             cd $CWD
             cd deployment
-            mvn -Dcode_name="$BASE" -Dvariant="$PORT"
+            mvn -Dcode_name="$APP_CODE_NAME" -Dvariant="$PORT"
             cd $CWD
         else
-            if [ -f "build/$BASE-$PORT.jar" ]; then
-                cp -afv build/$BASE-$PORT.jar ../../$BASE-$PORT.jar
+            if [ -f "build/$APP_CODE_NAME-$PORT.jar" ]; then
+                cp -afv build/$APP_CODE_NAME-$PORT.jar ../../$APP_CODE_NAME-$PORT.jar
             fi
         fi
     else

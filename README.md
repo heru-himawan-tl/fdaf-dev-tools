@@ -6,7 +6,9 @@ for compiling a testing-application or a ready-to-deploy application, to split
 current FDAF framework from current development-source of application, and for
 realtime testing the FDAF application view layer design.
 
-## Determining The PORT
+## How to use?
+
+### Determining The PORT
 
 Before using FDAF development tools, you must decide which PORT will be applied.
 PORT can be set within `application.conf` as one of the following three PORT(s):
@@ -15,9 +17,9 @@ PORT can be set within `application.conf` as one of the following three PORT(s):
   - `with-eclipselink` - to compile FDAF application with EclipseLink JPA provider supports
   - `thorntail` - to compile FDAF application into Thorntail application
 
-## Common Usage
+### Common Usage
 
-### With Fresh FDAF Framework
+#### With Fresh FDAF Framework
 
 To create application from a fresh FDAF framework, follow the following steps:
 
@@ -35,7 +37,7 @@ i.e `PORT="with-hibernate"`.
 
 4. Call `./compile-test.sh`.
   
-### With Split or Modified FDAF Framework
+#### With Split or Modified FDAF Framework
 
 To create application from a split FDAF framework, follow the following steps:
 
@@ -58,9 +60,9 @@ i.e `PORT="with-hibernate"`.
 
 5. Call `./compile-test.sh`.
 
-## Specific Usage
+### Specific Usage
 
-### Splitting FDAF Framework
+#### Splitting FDAF Framework
 
 To split FDAF framework from an application project, call `./fdaf-ext.sh`
 script from terminal console without argument, from inside your current FDAF
@@ -71,7 +73,7 @@ Note:
 This will generate most of generated stuffs into default, i.e.
 `develop.properties`.
 
-### Realtime View Layers Element Update
+#### Realtime View Layers Element Update
 
 In testing an FDAF web-application, you will need to compile FDAF into a
 _testing-application_. This collection of tools will help you into such

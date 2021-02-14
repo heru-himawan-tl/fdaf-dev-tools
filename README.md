@@ -10,7 +10,7 @@ realtime testing the FDAF application view layer design.
 
 ### Determining The PORT
 
-Before using FDAF development tools, you must decide which PORT will be applied.
+Before using FDAF development tools, you must decide which PORT to apply.
 PORT can be set within `application.conf` as one of the following three PORT(s):
 
   - `with-hibernate` - to compile FDAF application with Hibernate JPA provider supports

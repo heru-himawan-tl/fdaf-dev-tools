@@ -87,7 +87,7 @@ console under current project directory with one of PORT options:
   - `with-eclipselink` - to realtime update view layer for FDAF application with EclipseLink JPA provider supports
   
 Note:  
-This is not applicable for FDAF compiled with PORT=thorntail or as a Thorntail Application.
+This is not applicable for FDAF compiled with `PORT=thorntail` or as a Thorntail Application.
 
 ## License
 

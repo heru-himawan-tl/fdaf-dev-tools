@@ -91,6 +91,7 @@ for sf in $(echo "base
     with-eclipselink-build-invoker
     with-hibernate-build-invoker
     printing-service-client
+    tailing-validation-messages
     pom.xml"); do
     if [ ! -e "$sf" ]; then
         ln -s $BASE/$sf ./$sf
@@ -262,6 +263,7 @@ with-hibernate-build-invoker
 develop.properties
 printing-service-client
 pom.xml
+tailing-validation-messages
 README.md"); do
     rm -rf $node
 done
@@ -282,10 +284,8 @@ rm -rf printing-service-client/target
 
 echo "" > templates/logic-resource-template/src/main/resources/META-INF/sql/application-table-create.sql
 
-if [ "$1" = "--to-git" ]; then
-    git add .
-    git commit -m "Routine Code Update `date`"
-    git push -u origin master
-fi
+git add .
+git commit -m "Routine Code Update `date`"
+git push -u origin master
 
 cd $CWD

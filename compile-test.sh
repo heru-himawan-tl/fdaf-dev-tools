@@ -16,7 +16,7 @@ if mvn clean compile -P initialize-compilable; then
     if mvn; then
         if [ "$PORT" != "thorntail" ]; then
             cd $CWD
-            cd deployment
+            cd deployment-test
             mvn -Dcode_name="$APP_CODE_NAME" -Dvariant="$PORT"
             cd $CWD
         else

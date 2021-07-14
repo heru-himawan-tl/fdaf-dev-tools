@@ -88,10 +88,13 @@ for sf in $(echo "base
     modeler
     templates
     thorntail-build-invoker
+    with-eclipselink-in-single-war-build-invoker
+    with-hibernate-in-single-war-build-invoker
     with-eclipselink-build-invoker
     with-hibernate-build-invoker
     printing-service-client
     tailing-validation-messages
+    dependencies-templates
     pom.xml"); do
     if [ ! -e "$sf" ]; then
         ln -s $BASE/$sf ./$sf
@@ -258,12 +261,15 @@ custom-core-source
 modeler
 templates
 thorntail-build-invoker
+with-eclipselink-in-single-war-build-invoker
+with-hibernate-in-single-war-build-invoker
 with-eclipselink-build-invoker
 with-hibernate-build-invoker
 develop.properties
 printing-service-client
 pom.xml
 tailing-validation-messages
+dependencies-templates
 README.md"); do
     rm -rf $node
 done
